@@ -257,3 +257,17 @@ hr {
     height: auto;
     z-index: 10; /* Ensures it appears above other elements */
 }
+.captcha-submit {
+    padding: 10px 20px;
+    background-color: #3a8dde;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.captcha-submit:hover {
+    background-color: #1e3c72;
+}
