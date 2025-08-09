@@ -17,6 +17,12 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
+.huh {
+    font-size: 40px;
+    color: darkcyan;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
 section {
     width: 100%;
     padding-bottom: 10px;
@@ -246,7 +252,7 @@ hr {
 .logo {
     position: absolute;
     top: 50px;
-    left: 70px;
+    left: 150px;
     width: 50px; /* Adjust size as needed */
     height: auto;
     z-index: 10; /* Ensures it appears above other elements */
