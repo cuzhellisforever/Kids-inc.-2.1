@@ -43,6 +43,15 @@ section img {
     left: 0;
 }
 
+.one {
+    top: 20px;
+    background-color: darkcyan;
+}
+.two {
+    top: 80px;
+    background-color: darkslateblue;
+}
+
 .lol {
     top: 20px;
     background-color: darkslateblue;
@@ -213,4 +222,24 @@ tr:hover td {
 
 .no iframe {
     border-radius: 15px; /* Rounded corners for the image */
+}
+.wow {
+    color: #ff6347; /* Tomato color */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6347;
+    transition: all 0.3s ease-in-out;
+}
+
+.wow:hover {
+    color: #4caf50; /* Green color on hover */
+    border-bottom: 2px solid #4caf50;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+hr {
+    border: 1px solid #000;
+    width: 50%;
+    margin: 20px auto;
 }
