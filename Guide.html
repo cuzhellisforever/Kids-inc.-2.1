@@ -12,6 +12,7 @@
     <a href="index.html" class="lol">Home</a>
     <a href="Guide.html" class="gop">Guide</a>
     <a href="security.html" class="nyuh">Security</a>
+    <a id="themeToggle" class="theme-toggle">Toggle Dark Theme</a>
 </nav>
 <body>
     <div class="middle">
@@ -53,5 +54,28 @@
             <p>the new age limit is now <i>16 years</i>, instead of 18.</p>
         </div>
     </div>
+    <script>
+    // Get the toggle button and check for saved theme preference
+    const themeToggle = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Apply the saved theme if it exists
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
+
+    // Add event listener to toggle the theme
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+
+        // Save the user's preference in localStorage
+        if (document.body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+        console.log('Dark theme applied:', document.body.classList.contains('dark-theme'));
+    });
+</script>
 </body>
 </html>

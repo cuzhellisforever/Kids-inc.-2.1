@@ -1,9 +1,6 @@
 body {
-    background-image: url(https://thfvnext.bing.com/th/id/OIP.I3pSmPqfuF7TJ-kL3UOXagHaEq?w=242&h=180&c=7&r=0&o=5&cb=thfvnext&dpr=1.1&pid=1.7);
-    background-repeat: repeat;
-    font-family: Nehucha, cursive;
-    font-size: 20px;
-    text-align: center;
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Black text */
 }
 
 .middle {
@@ -69,6 +66,10 @@ section img {
 .nyuh {
     top: 140px;
     background-color: darkcyan;
+}
+.theme-toggle {
+    top: 200px;
+    background-color: darkorange;
 }
 .Home {
     top: 20px;
@@ -269,5 +270,59 @@ hr {
 }
 
 .captcha-submit:hover {
+    background-color: #1e3c72;
+}
+
+/* Light Theme (Default) */
+body.light-theme {
+    background-image: url(https://thfvnext.bing.com/th/id/OIP.SeXUxtWrXuk1FreXDVdgYAAAAA?w=140&h=200&c=7&r=0&o=7&cb=thfvnext&dpr=1.1&pid=1.7&rm=3);
+    color: #000000;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.middle.dark-theme {
+    background-color: #1e1e1e; /* Dark background for the middle section */
+    color: #ffffff; /* White text */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.sidenav a.dark-theme {
+    background-color: #333333; /* Dark background for links */
+    color: #ffffff; /* White text for links */
+}
+
+.no.dark-theme {
+    background-color: #1e1e1e; /* Dark background for the "no" section */
+    color: #ffffff; /* White text */
+}
+
+h1.dark-theme, h2.dark-theme, h3.dark-theme {
+    color: #ffffff; /* Ensure headers are white */
+}
+
+p.dark-theme, li.dark-theme {
+    color: #ffffff; /* Ensure paragraphs and list items are white */
+}
+
+button.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #3a8dde;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.theme-toggle:hover {
     background-color: #1e3c72;
 }
